@@ -1,0 +1,32 @@
+.text{
+    margin: 0 0 12px 0;
+    font-size: 24px;
+}
+.list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.item{
+    display: flex;
+    font-size: 16px;
+    gap: 4px;
+    margin: 8px ;
+}
+.item:nth-child(2){
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.button{
+    border: 1px solid #9a99a3;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 8px;
+    padding: 2px 12px;
+    
+}
+.button:hover, .button:focus {
+    background-color: aquamarine;
+}

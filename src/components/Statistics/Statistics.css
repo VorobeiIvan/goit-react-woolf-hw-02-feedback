@@ -1,0 +1,23 @@
+.statistics-title {
+    margin: 20px 0 12px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+.statistics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style: none;
+    margin: 0 ;
+    padding: 0;
+
+}
+.statistics-item{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.item-value{
+    font-size: 12px;
+}
