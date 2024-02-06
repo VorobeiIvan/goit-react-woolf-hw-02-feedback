@@ -1,13 +1,9 @@
-// App.jsx
 import React, { Component } from 'react';
-import './App.css';
-import '../Statistics/Statistics.css';
-import '../FeedbackOptions/FeedbackOptions.css';
-import '../Section/Section.css';
-import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
-import Statistics from '../Statistics/Statistics';
-import Section from '../Section/Section';
-import Notification from '../Notification/Notification';
+import Section from './Section';
+import FeedbackOptions from './FeedbackOptions';
+import Statistics from './Statistics';
+import Notification from './Notification';
+import './main.css';
 
 class App extends Component {
   state = {
@@ -40,7 +36,7 @@ class App extends Component {
     const options = ['good', 'neutral', 'bad'];
 
     return (
-      <div>
+      <div className="container">
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
