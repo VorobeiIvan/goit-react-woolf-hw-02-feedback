@@ -1,29 +1,15 @@
-import {Component}  from "react"
+const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+  return (
+    <ul className="statistics-list">
+      <li className="statistics-item">Good: {good}</li>
+      <li className="statistics-item">Neutral: {neutral}</li>
+      <li className="statistics-item">Bad: {bad}</li>
+      <li className="statistics-item">Total: {total}</li>
+      <li className="statistics-item">
+        Positive feedback: {positivePercentage} %
+      </li>
+    </ul>
+  );
+};
 
-class Statistics extends Component {
-
-render (){
-    return (
-<div>
-  <h2 className="statistics-title">Statistics</h2>
-  <ul className="statistics-list">
-    <li className="statistics-item">
-    Good: <span className="item-value">0</span>
-    </li>
-    <li className="statistics-item">
-    Neutral: <span className="item-value">0</span>
-    </li>
-    <li className="statistics-item">
-    Bad: <span className="item-value">0</span>
-    </li>
-    <li className="statistics-item">
-    Total: <span className="item-value">0</span>
-    </li>
-    <li className="statistics-item">
-    Positive feedback: <span className="item-value">0 %</span>
-    </li>
-  </ul>
-</div>
-)}}
-
-export  default Statistics
+export default Statistics;
